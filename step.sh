@@ -12,7 +12,7 @@ else
     echo "$service_account_json_key_content" > "${SCRIPT_DIR}/credentials.json"
 fi
 
-pipenv install google-api-python-client
+pipenv install google-api-python-client==2.148.0
 pipenv install oauth2client
 
 pipenv run python "${SCRIPT_DIR}/rollout_update.py" "${package_name}" "${SCRIPT_DIR}/credentials.json"
