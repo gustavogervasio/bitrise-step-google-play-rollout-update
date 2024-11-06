@@ -4,7 +4,7 @@ set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Identificador para ficar claro qual versão o bitrise está rodando
-echo "Running step.sh 0.0.1"
+echo "Running step.sh 0.0.2"
 
 echo "Updating phase release for: ${package_name}"
 if [ -z "$service_account_json_key_content" ] ; then
