@@ -48,6 +48,8 @@ def main():
             elif rolloutPercentage == 0.1:
                 release['userFraction'] = 0.2
             elif rolloutPercentage == 0.2:
+                release['userFraction'] = 0.25
+            elif rolloutPercentage == 0.25:
                 release['userFraction'] = 0.5
             elif rolloutPercentage == 0.5:
                 del release['userFraction']
