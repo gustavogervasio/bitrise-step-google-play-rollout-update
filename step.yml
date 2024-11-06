@@ -49,16 +49,13 @@ run_if: ""
 
 deps:
   brew:
-  - name: pipenv
-  - name: wget
+    - name: wget
   apt_get:
-  - name: pipenv
-  - name: wget
-  
+    - name: wget
+
 toolkit:
   bash:
     entry_file: step.sh
-
 
 inputs:
   - service_account_json_key_path:
